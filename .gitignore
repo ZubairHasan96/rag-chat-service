@@ -1,0 +1,76 @@
+# --------------------------------------------
+# Build and IDE files
+# --------------------------------------------
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# --------------------------------------------
+# OS-specific files
+# --------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.Spotlight-V100
+.Trashes
+*.swp
+*~
+
+# --------------------------------------------
+# Logs and temporary files
+# --------------------------------------------
+logs/
+*.log
+tmp/
+*.tmp
+*.bak
+*.old
+*.pid
+
+# --------------------------------------------
+# Spring Boot specific
+# --------------------------------------------
+# Exclude embedded server logs or temp files
+spring.log
+*.pid
+*.pid.lock
+
+# Application config files (optional)
+# Uncomment if you store secrets locally
+# application-local.yml
+# application-local.properties
+# .env
+
+# --------------------------------------------
+# Docker and local data
+# --------------------------------------------
+docker-compose.override.yml
+.env
+mysql_data/
+data/
+*.seed
+*.pid.lock

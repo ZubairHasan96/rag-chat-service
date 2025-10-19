@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - include:
+      file: init_session.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: init_message.yaml
+      relativeToChangelogFile: true

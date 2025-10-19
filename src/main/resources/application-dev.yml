@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/rag_chat
+    username: root
+    password: root
+
+api:
+  key: ${API_KEY:my-secret-api-key}
+  rate-limit:
+    requests: 100
+    duration: 1
+
+logging:
+  level:
+    root: INFO
+    come.assessment.ragchat: DEBUG
+
+swagger:
+  enabled: true

@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/rag_chat}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:password}
+  profiles:
+    active: dev
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+
+server:
+  port: 8080
+
+api:
+  key: ${API_KEY:my-secret-api-key}
+  rate-limit:
+    requests: 100
+    duration: 1m
+
+logging:
+  level:
+    root: INFO
+    com.assessment.ragchat: DEBUG
+
+swagger:
+  enabled: true
+  version: 2.9.2
+  
