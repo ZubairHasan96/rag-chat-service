@@ -92,7 +92,7 @@ rag-chat-service
 ## Setup Instructions
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/ZubairHasan96/rag-chat-service
    cd rag-chat-service
    ```
 
