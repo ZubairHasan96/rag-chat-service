@@ -69,7 +69,6 @@ spring.log
 # Docker and local data
 # --------------------------------------------
 docker-compose.override.yml
-.env
 mysql_data/
 data/
 *.seed
